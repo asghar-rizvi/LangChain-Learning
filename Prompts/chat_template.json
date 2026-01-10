@@ -1,0 +1,76 @@
+{
+    "lc": 1,
+    "type": "constructor",
+    "id": [
+        "langchain",
+        "prompts",
+        "chat",
+        "ChatPromptTemplate"
+    ],
+    "kwargs": {
+        "input_variables": [
+            "role"
+        ],
+        "messages": [
+            {
+                "lc": 1,
+                "type": "constructor",
+                "id": [
+                    "langchain",
+                    "prompts",
+                    "chat",
+                    "SystemMessagePromptTemplate"
+                ],
+                "kwargs": {
+                    "prompt": {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                            "langchain",
+                            "prompts",
+                            "prompt",
+                            "PromptTemplate"
+                        ],
+                        "kwargs": {
+                            "input_variables": [
+                                "role"
+                            ],
+                            "template": "You are a helpful assistant for this role {role}",
+                            "template_format": "f-string"
+                        },
+                        "name": "PromptTemplate"
+                    }
+                }
+            },
+            {
+                "lc": 1,
+                "type": "constructor",
+                "id": [
+                    "langchain",
+                    "prompts",
+                    "chat",
+                    "HumanMessagePromptTemplate"
+                ],
+                "kwargs": {
+                    "prompt": {
+                        "lc": 1,
+                        "type": "constructor",
+                        "id": [
+                            "langchain",
+                            "prompts",
+                            "prompt",
+                            "PromptTemplate"
+                        ],
+                        "kwargs": {
+                            "input_variables": [],
+                            "template": "Can u give me a 3 bulleted points answer only",
+                            "template_format": "f-string"
+                        },
+                        "name": "PromptTemplate"
+                    }
+                }
+            }
+        ]
+    },
+    "name": "ChatPromptTemplate"
+}

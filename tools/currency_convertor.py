@@ -6,8 +6,10 @@ from typing import Annotated
 import requests
 import json
 from dotenv import load_dotenv
+import os
 
 load_dotenv()
+TOKEN = os.getenv('TOKEN')
 
 @tool
 def get_conversion_factor(base_cur: str, target_cur: str) -> float:
